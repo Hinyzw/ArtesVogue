@@ -1,0 +1,81 @@
+
+.informacoes {
+    display: flex;
+    gap: 2rem;
+    padding: 4rem .8rem;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--primary);
+    font-size: .8rem;
+    color: #111;
+}
+
+.informacoes>div {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.informacoes svg {
+    height: 64px;
+}
+
+.informacoes h4 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.container {
+    display: block;
+    margin: 0 auto;
+    max-width: var(--mobile);
+}
+
+.hero-section {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    padding: 3.4rem 1rem;
+    background-image: url(./Media/SVG//waves.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 110%;
+}
+
+.categorias {
+    display: flex;
+    margin: 3rem 1rem;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+}
+
+.categorias div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.categorias div:hover{
+    color: var(--secondary);
+}
+
+.categorias img {
+    display: block;
+    width: 220px;
+    height: 220px;
+    border: 2px solid var(--primary);
+    border-radius: 220px;
+}
+
+.categorias img:hover{
+    border:6px solid var(--secondary);
+}
+
+.logo{
+    position: fixed;
+    width: 1000px;
+}
+

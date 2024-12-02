@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="Styles/global.css" />
+    <link rel="stylesheet" href="Styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <div style="display: flex; align-items: center">
+        <img id="logo" src="Media/SVG/ArteVogue.svg" alt="Logo" />
+        <a
+          class="hidden only-sm"
+          style="text-decoration: none; color: var(--white)"
+          href="#menu"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 64 64"
+            fill="none"
+            stroke="#000000"
+            width="48px"
+            height="48px"
+          >
+            <line x1="16" y1="32" x2="48" y2="32" />
+            <line x1="16" y1="20" x2="48" y2="20" />
+            <line x1="16" y1="44" x2="48" y2="44" />
+          </svg>
+        </a>
+      </div>
+      <nav>
+        <ul id="menu">
+          <li>
+            <a href="#" class="hidden only-sm" style="font-size: 0.8rem">✕</a>
+          </li>
+          <li><a href="#">Home</a></li>
+          <li><a href="produtos.html">Loja</a></li>
+          <li><a href="quemsomos.html">Sobre</a></li>
+          <li><a href="#">Fórum</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+
+      <!--Barra de pesquisa-->
+      <div style="width: 100%; max-width: 420px">
+        <label class="search-box">
+          <span for="search">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#e8eaed"
+            >
+              <path
+                d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"
+              />
+            </svg>
+          </span>
+          <input
+            type="text"
+            id="search"
+            placeholder="Tendencias para o verão ☀️"
+          />
+        </label>
+      </div>
+
+      <div class="actions">
+        <a href="login.html" class="carrinho" data-itens="3"
+          ><img src="Media/SVG/person.svg"
+        /></a>
+        <a href=""><img src="Media/SVG/bolsa.svg" alt="" /></a>
+      </div>
+    </header>
+
+    <main>
+      <!--Hero Section-->
+      <section class="container hero-section">
+        <div
+          style="overflow: hidden; position: relative; border-radius: 1.4rem"
+        >
+          <div
+            style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background-color: var(--primary);
+              z-index: 10;
+              opacity: 0.5;
+              backdrop-filter: blur(4px);
+            "
+          ></div>
+          <iframe
+            width="1000"
+            height="1000"
+            style="
+              max-width: 100%;
+              height: 100%;
+              min-height: 50vh;
+              scale: 2;
+              filter: blur(2px);
+              user-select: none;
+              cursor: none;
+              pointer-events: none;
+            "
+            src="https://www.youtube.com/embed/NSvnwRYKzg0?start=20&si=AFTOGlZZmuiuAoEJ&modestbranding=1&iv_load_policy=3&autohide=1&showinfo=0&controls=0&rel=0&autoplay=1&loop=1&mute=1"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 1rem">
+          <h1 class="text-heading">A expressão criativa através da moda</h1>
+          <p style="font-size: 1.4rem">
+            A moda é um espelho da alma. Através dela, podemos comunicar nossos
+            valores, nossos sentimentos e nossas aspirações. Venha conosco nessa
+            jornada e descubra como a moda pode transformar sua vida.
+          </p>
+          <button>Veja a nova coleção</button>
+        </div>
+      </section>
+
+      <!--*Inforamções-->
+      <section class="informacoes">
+        <div class="local">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#000000"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+            <circle cx="12" cy="10" r="3" />
+          </svg>
+          <h4>Enviamos</h4>
+          <span>para todo Brasil</span>
+        </div>
+
+        <div class="juros">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#000000"
+            viewBox="0 0 32 32"
+          >
+            <path
+              d="M31,7H1A1,1,0,0,0,0,8V24a1,1,0,0,0,1,1H31a1,1,0,0,0,1-1V8A1,1,0,0,0,31,7ZM25.09,23H6.91A6,6,0,0,0,2,18.09V13.91A6,6,0,0,0,6.91,9H25.09A6,6,0,0,0,30,13.91v4.18A6,6,0,0,0,25.09,23ZM30,11.86A4,4,0,0,1,27.14,9H30ZM4.86,9A4,4,0,0,1,2,11.86V9ZM2,20.14A4,4,0,0,1,4.86,23H2ZM27.14,23A4,4,0,0,1,30,20.14V23Z"
+            />
+            <path
+              d="M7.51.71a1,1,0,0,0-.76-.1,1,1,0,0,0-.61.46l-2,3.43a1,1,0,0,0,1.74,1L7.38,2.94l5.07,2.93a1,1,0,0,0,1-1.74Z"
+            />
+            <path
+              d="M24.49,31.29a1,1,0,0,0,.5.14.78.78,0,0,0,.26,0,1,1,0,0,0,.61-.46l2-3.43a1,1,0,1,0-1.74-1l-1.48,2.56-5.07-2.93a1,1,0,0,0-1,1.74Z"
+            />
+            <path
+              d="M16,10a6,6,0,1,0,6,6A6,6,0,0,0,16,10Zm0,10a4,4,0,1,1,4-4A4,4,0,0,1,16,20Z"
+            />
+          </svg>
+          <h4>Até 12x sem juros</h4>
+          <span>10% off no pix</span>
+        </div>
+
+        <div class="enviar">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 16 16"
+            fill="#000000"
+            class="bi bi-truck"
+          >
+            <path
+              d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+            />
+          </svg>
+          <h4>Frete Grátis</h4>
+          <span>Confira as condições</span>
+        </div>
+
+        <div class="seguro">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M9 12L11 14L15 9.99999M20 12C20 16.4611 14.54 19.6937 12.6414 20.683C12.4361 20.79 12.3334 20.8435 12.191 20.8712C12.08 20.8928 11.92 20.8928 11.809 20.8712C11.6666 20.8435 11.5639 20.79 11.3586 20.683C9.45996 19.6937 4 16.4611 4 12V8.21759C4 7.41808 4 7.01833 4.13076 6.6747C4.24627 6.37113 4.43398 6.10027 4.67766 5.88552C4.9535 5.64243 5.3278 5.50207 6.0764 5.22134L11.4382 3.21067C11.6461 3.13271 11.75 3.09373 11.857 3.07827C11.9518 3.06457 12.0482 3.06457 12.143 3.07827C12.25 3.09373 12.3539 3.13271 12.5618 3.21067L17.9236 5.22134C18.6722 5.50207 19.0465 5.64243 19.3223 5.88552C19.566 6.10027 19.7537 6.37113 19.8692 6.6747C20 7.01833 20 7.41808 20 8.21759V12Z"
+              stroke="#000000"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <h4>100% Seguro</h4>
+          <span>Certificado SSL</span>
+        </div>
+      </section>
+
+      <!--Categorias-->
+      <section class="categorias">
+        <div class="Edição Limitada">
+          <a href=""><img src="Media/IMGs/ediçãolimitada.jpg" alt="Edição limitada" /></a>
+          <label>Edição limitada</label>
+        </div>
+
+        <div class="Primavera">
+          <a href=""><img src="Media/IMGs/primavera.jpg" alt="Primavera" /></a>
+          <label>Primavera</label>
+        </div>
+
+        <div class="Verão">
+          <a href=""><img src="Media/IMGs/verão.jpg" alt="Verão" /></a>
+          <label>Verão</label>
+        </div>
+
+        <div class="Outono">
+          <a href=""><img src="Media/IMGs/outono.jpg" alt="Outono" /></a>
+          <label>Outono</label>
+        </div>
+
+        <div class="Inverno">
+          <a href=""><img src="Media/IMGs/Inverno.jpg" alt="Inverno" /></a>
+          <label>Inverno</label>
+        </div>
+      </section>
+
+      <!--Footer-->
+      <footer>
+        <div class="Contato">
+          <h4>Informações de Contato</h4>
+          <p><img width="20px" src="Media/SVG/home_pin_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt=""> 08780-540, Rua Nelson Franco, Jardim Armênia, Mogi das Cruzes-SP</p>
+          <p><img width="20px" src="Media/SVG/call_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt=""> (19) 98125-5541</p>
+          <p><img width="20px" src="Media/SVG/mail_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt=""> ArteVogue@oficial.com</p>
+        </div>
+
+        <div class="politicas">
+          <h4>Políticas</h4>
+          <p>Termos de Politica e Privacidade</p>
+          <p>Termos de uso</p>
+          <p>Direitos autorais.</p>
+        </div>
+
+        <div class="redessociais">
+          <h4>Redes sociais</h4>
+          <p><img width="10px" src="Media/SVG/instagram.png" alt="">ArteVogue_ofc</p>
+          <p><img width="10px" src="Media/SVG/linkedin.png" alt="">ArteVogue</p>
+          <p><img width="10px" src="Media/SVG/twitter.png" alt=""> twitter</p>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

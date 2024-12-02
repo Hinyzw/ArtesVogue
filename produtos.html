@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja</title>
+    <link rel="stylesheet" href="Styles/global.css">
+    <link rel="stylesheet" href="Styles/produtos.css">
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <div style="display: flex; align-items: center">
+          <img id="logo" src="Media/SVG/ArteVogue.svg" alt="Logo" />
+          <a
+            class="hidden only-sm"
+            style="text-decoration: none; color: var(--white)"
+            href="#menu"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 64 64"
+              fill="none"
+              stroke="#000000"
+              width="48px"
+              height="48px"
+            >
+              <line x1="16" y1="32" x2="48" y2="32" />
+              <line x1="16" y1="20" x2="48" y2="20" />
+              <line x1="16" y1="44" x2="48" y2="44" />
+            </svg>
+          </a>
+        </div>
+        <nav>
+          <ul id="menu">
+            <li>
+              <a href="#" class="hidden only-sm" style="font-size: 0.8rem">✕</a>
+            </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Loja</a></li>
+            <li><a href="quemsomos.html">Sobre</a></li>
+            <li><a href="#">Fórum</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </nav>
+  
+        <div style="width: 100%; max-width: 420px">
+          <label class="search-box">
+            <span for="search">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#e8eaed"
+              >
+                <path
+                  d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"
+                />
+              </svg>
+            </span>
+            <input
+              type="text"
+              id="search"
+              placeholder="Tendencias para o verão ☀️"
+            />
+          </label>
+        </div>
+  
+        <div class="actions">
+          <a href="login.html" class="carrinho" data-itens="3"
+            ><img src="Media/SVG/person.svg"
+          /></a>
+          <a href=""><img src="Media/SVG/bolsa.svg" alt="" /></a>
+        </div>
+      </header>
+
+      <!--Main-->
+      <main>
+        <div class="filtros">
+            <div class="categorias">
+              <h2>Filtros</h2>
+              <h4>Categorias</h4>
+              <ul>
+                <li><a href="#">Jeans</a></li>
+                <li><a href="#">Jaquetas</a></li>
+                <li><a href="">Tops</a></li>
+                <li><a href="">Calças</a></li>
+                <li><a href="">Vestidos</a></li>
+              </ul>
+
+              <h4>Coleções</h4>
+              <ul>
+                <li><a href="">Verão Vibrante</a></li>
+                <li><a href="">Sol e Arte</a></li>
+                <li><a href="">Avant-Garde</a></li>
+                <li><a href="">Museus em Movimento</a></li>
+                <li><a href="">Retro Revival</a></li>
+                <li><a href="">Explosão de Cores</a></li>
+              </ul>
+
+              <h4>Estilo</h4>
+              <ul>
+                <li><a href="">Y2K</a></li>
+                <li><a href="">Boho Chic</a></li>
+                <li><a href="">Minimalismo</a></li>
+                <li><a href="">Streetwear</a></li>
+                <li><a href="">Vintage</a></li>
+                <li><a href="">Grunge</a></li>
+                <li><a href="">NormCore</a></li>
+                <li><a href="">Eco-Friendly</a></li>
+                <li><a href="">Glam Rock</a></li>
+                <li><a href="">Sci-Fi</a></li>
+                <li><a href="">Military</a></li>
+                <li><a href="">Lolitta</a></li>
+              </ul>
+            </div>
+        </div>
+            <div class="produtos">
+                <div class="container">
+                    <div class="containerproduto">
+                      <img src="Media/IMGs/Produtos/produto1.jpg" class="imagem">
+                      <h2>Bolsa</h2>
+                      <div class="preco">R$ 260,99</div>
+                      <div class="precoantigo">R$ 300,00</div>
+                      <a href="compra.html"> <button class="button">COMPRAR </button></a>
+                    </div>
+
+                    <div class="containerproduto">
+                        <img src="Media/IMGs/Produtos/produto2.jpg" class="imagem">
+                        <h2>Bota Cano Médio</h2>
+                        <div class="preco">R$ 259,99</div> <br>
+                        <button class="button">COMPRAR </button>
+                      </div>
+
+                    <div class="containerproduto">
+                      <img src="Media/IMGs/Produtos/produto3.jpg" class="imagem">
+                      <h2>Coturno Branco</h2>
+                      <div class="preco">R$ 359,99</div> <br>
+                      <button class="button">COMPRAR </button>
+                    </div>
+
+                    <div class="containerproduto">
+                        <img src="Media/IMGs/Produtos/produto4.jpg" class="imagem">
+                        <h2>Xícara de Rosa</h2>
+                        <div class="preco">R$ 100,00</div> <br>
+                        <button class="button">COMPRAR </button>
+                    </div>
+
+                    <div class="containerproduto">
+                        <img src="Media/IMGs/Produtos/produto5.jpg" class="imagem">
+                        <h2>Blusa Manga Longa</h2>
+                        <div class="preco">R$ 60,99</div>
+                        <div class="precoantigo">R$ 79,99</div>
+                        <button class="button">COMPRAR </button>
+                    </div>
+
+                    <div class="containerproduto">
+                        <img src="Media/IMGs/Produtos/produto6.jpg" class="imagem">
+                        <h2>Kit Sabonete Esfoliante</h2>
+                        <div class="preco">R$ 130,99</div>
+                        <div class="precoantigo">R$ 170,39</div>
+                        <button class="button">COMPRAR </button>
+                    </div>
+
+                    <div class="containerproduto">
+                        <img src="Media/IMGs/Produtos/produto7.jpg" class="imagem">
+                        <h2>Blusa Crochê Rosas</h2>
+                        <div class="preco">R$ 230,00</div>
+                        <div class="precoantigo">R$ 300,00</div>
+                        <button class="button">COMPRAR </button>
+                    </div>
+
+                    <div class="containerproduto">
+                        <img src="Media/IMGs/Produtos/produto8.jpg" class="imagem">
+                        <h2>Blusa Vintage</h2>
+                        <div class="preco">R$ 70,00</div>
+                        <div class="precoantigo">R$ 80,99</div>
+                        <button class="button">COMPRAR </button>
+                    </div>
+
+                    <div class="containerproduto">
+                        <img src="Media/IMGs/Produtos/produto9.jpg" class="imagem">
+                        <h2>Conjunto Babadeiro</h2>
+                        <div class="preco">R$ 450,00</div>
+                        <div class="precoantigo">R$ 480,99</div>
+                        <button class="button">COMPRAR </button>
+                    </div>
+
+                    <div class="containerproduto">
+                        <img src="Media/IMGs/Produtos/produto10.jpg" class="imagem">
+                        <h2>Saia Crochê</h2>
+                        <div class="preco">R$ 360,00</div>
+                        <div class="precoantigo">R$ 400,00</div>
+                        <button class="button">COMPRAR </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+      </main>
+
+      <!--Footer-->
+      <footer>
+        <div class="Contato">
+          <h4>Informações de Contato</h4>
+          <p><img width="20px" src="Media/SVG/home_pin_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt=""> 08780-540, Rua Nelson Franco, Jardim Armênia, Mogi das Cruzes-SP</p>
+          <p><img width="20px" src="Media/SVG/call_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt=""> (19) 98125-5541</p>
+          <p><img width="20px" src="Media/SVG/mail_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt=""> ArteVogue@oficial.com</p>
+        </div>
+
+        <div class="politicas">
+          <h4>Políticas</h4>
+          <p>Termos de Politica e Privacidade</p>
+          <p>Termos de uso</p>
+          <p>Direitos autorais.</p>
+        </div>
+
+        <div class="redessociais">
+          <h4>Redes sociais</h4>
+          <p><img width="10px" src="Media/SVG/instagram.png" alt="">ArteVogue_ofc</p>
+          <p><img width="10px" src="Media/SVG/linkedin.png" alt="">ArteVogue</p>
+          <p><img width="10px" src="Media/SVG/twitter.png" alt=""> twitter</p>
+        </div>
+      </footer>
+</body>
+</html>

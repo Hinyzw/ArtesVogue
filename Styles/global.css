@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --white: #f4fbfa;
+    --primary: #a59cd8;
+    --secondary: #996fc6;
+    --red: #cc8686;
+    --padding: .6rem;
+    --border-radius: .6rem;
+    --heading: 3rem;
+    --title: 2rem;
+    --content: 1rem;
+    --mobile: 1080px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    transition: all .3s linear;
+    font-size: var(--content);
+    min-width: 100%;
+    min-height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--white);
+}
+
+body *:target {
+    display: unset;
+}
+
+nav>ul:target {
+    display: flex;
+}
+
+a {
+    color: var(--secondary)
+}
+
+.text-heading {
+    font-size: var(--heading);
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.text-title {
+    font-size: var(--title);
+}
+
+header {
+    gap: 1rem;
+    width: 100%;
+    padding: 1.4rem 0;
+    display: flex;
+    align-items: center;
+    background: var(--primary);
+    justify-content: space-around;
+}
+
+#logo {
+    max-width: 78px;
+}
+
+nav>ul {
+    gap: 1.4rem;
+    display: flex;
+    list-style: none;
+    color: var(--white);
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+nav a:hover {
+    color: var(--white);
+}
+
+.btn,
+button {
+    top: 0;
+    border: none;
+    outline: auto;
+    padding: 1rem;
+    cursor: pointer;
+    position: relative;
+    color: var(--white);
+    font-weight: bolder;
+    text-transform: uppercase;
+    background-color: var(--primary);
+}
+
+.btn:hover,
+button:hover {
+    outline-color: var(--secondary);
+}
+
+.btn:focus,
+button:focus {
+    top: 2px;
+    outline-color: var(--primary);
+}
+
+input {
+    border: none;
+    display: block;
+    line-height: 2.6rem;
+    width: 100%;
+    max-width: 420px;
+    border-radius: var(--border-radius);
+    outline-color: var(--primary);
+    padding: 0 var(--padding);
+}
+
+.actions {
+    display: flex;
+}
+
+.actions img {
+    width: 2.4rem;
+}
+
+.carrinho {
+    position: relative;
+}
+
+.carrinho::before {
+    right: 0;
+    top: 1.4rem;
+    padding: .1rem .3rem;
+    background-color: var(--red);
+    border-radius: var(--border-radius);
+    position: absolute;
+    content: attr(data-itens);
+    color: var(--white);
+    font-weight: bold;
+    font-size: .8rem;
+    border: 2px solid var(--primary);
+}
+
+.hidden {
+    display: none;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background: var(--white);
+    flex-direction: row-reverse;
+    border-radius: var(--border-radius);
+}
+
+.search-box svg {
+    fill: var(--primary);
+}
+
+.search-box input {
+    outline: none;
+}
+
+.search-box>span {
+    border-left: 1px solid var(--primary);
+    padding: 0 var(--padding);
+}
+
+footer {
+    height: 200px;
+    background-color: var(--primary);
+    color: var(--content);
+    padding:60px;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+}
+
+h1{
+   font-size: var(--heading); 
+   font-family: Cinzel;
+}
+
+p{
+    font-family: Raleway;
+}
+
+
+/*celular*/
+@media(max-width: 1080px) {
+    .categorias {
+        flex-direction: column;
+    }
+
+    .informacoes {
+        flex-direction: column;
+    }
+
+    .hero-section {
+        display: block;
+    }
+
+    .actions img {
+        width: 2.3rem;
+    }
+
+    .only-sm {
+        display: unset;
+    }
+
+    header {
+        position: relative;
+    }
+
+    nav>ul {
+        display: none;
+        left: 0;
+        z-index: 50;
+        width: 100%;
+        padding: 1rem;
+        top: calc(100% - 1.2rem);
+        position: absolute;
+        flex-direction: column;
+        text-align: center;
+        font-size: larger;
+        background-color: var(--secondary);
+    }
+
+    nav>ul a {
+        border-radius: var(--border-radius);
+        display: block;
+        padding: var(--padding);
+    }
+
+    nav>ul a:hover {
+        background: rgba(0, 0, 0, .5);
+    }
+}

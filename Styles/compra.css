@@ -1,0 +1,51 @@
+.produto-detalhes {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.imagem-produto {
+    flex: 1;
+    text-align: center;
+}
+
+.imagem-produto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.detalhes-produto {
+    flex: 2;
+    padding: 20px;
+}
+
+.detalhes-produto h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.preco {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.precoantigo {
+    text-decoration: line-through;
+    color: #ccc;
+    font-size: 1rem;
+}
+
+.quantidade {
+    margin: 20px 0;
+}
+
+.quantidade label {
+    margin-right: 10px;
+}
+
+.quantidade input {
+    width: 50px;
+    padding: 5px;
+}
